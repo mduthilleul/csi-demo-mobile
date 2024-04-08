@@ -1,11 +1,11 @@
+import { Link, Stack, Tabs } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      <Text>Plop !</Text>
-      <StatusBar style="auto" />
+      <Text>Test</Text>
     </ScrollView>
   );
 }
