@@ -1,11 +1,14 @@
-import { Tabs } from 'expo-router';
+import { SplashScreen, Tabs } from 'expo-router';
 import { InputProvider } from '../contexts/InputContext';
 import { usePoppinsFont } from '../hooks/usePoppinsFont';
 import AppLoading from 'expo-app-loading';
 
 export default function AppLayout() {
+  SplashScreen.preventAutoHideAsync()
   const fontLoaded = usePoppinsFont()
-  if(!fontLoaded) return <AppLoading />
+  if(fontLoaded) {
+    SplashScreen.hideAsync()
+  }
   
   return (
       <InputProvider>
