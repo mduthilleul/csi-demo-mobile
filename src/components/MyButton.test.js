@@ -1,10 +1,20 @@
 import { fireEvent, render, screen } from '@testing-library/react-native';
-import { MyButton } from './MyButton';
+import { LogIn, LogOut, MyButton } from './MyButton';
 
 describe('MyButton', () => {
     it('should render title', () => {
       render(<MyButton title="Plop" />);
       expect(screen.getByTestId("title")).toHaveTextContent("Plop");
+    })
+
+    it('should render title', () => {
+      render(<LogIn />);
+      expect(screen.getByTestId("title")).toHaveTextContent("Connect");
+    })
+
+    it('should render title', () => {
+      render(<LogOut />);
+      expect(screen.getByTestId("title")).toHaveTextContent("Disconnect");
     })
 
     it('should call onPress function', () => {

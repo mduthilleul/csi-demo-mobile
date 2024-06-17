@@ -13,6 +13,10 @@ export const MyButton = ({onPress, title}: MyButtonProps) => {
   );
 };
 
+export const LogIn = () => <MyButton title="Connect" onPress={() => console.log("Connected")} />;
+export const LogOut = () => <MyButton title="Disconnect" onPress={() => console.log("Connected")} />;
+
+
 const styles = StyleSheet.create({
     container: {
     borderWidth: 10,
