@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "csi-demo-mobile",
+    "name": "CSI Demo Mobile",
     "slug": "csi-demo-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -21,7 +21,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "fr.mkdh.csi_demo_mobile"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -30,6 +31,15 @@
       "expo-router",
       "expo-font"
     ],
-    "scheme": "csi-demo-mobile"
+    "scheme": "csi-demo-mobile",
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "5e8add55-4591-42e5-ab1d-35344a134b07"
+      }
+    },
+    "owner": "mikadoh"
   }
 }
